@@ -1,6 +1,6 @@
 {
-  "name": "typedoc-default-themes",
-  "description": "Default themes for TypeDoc.",
+  "name": "ui-router-typedoc-themes",
+  "description": "UIRouter customized themes for TypeDoc.",
   "version": "0.4.0",
   "homepage": "http://typedoc.io",
   "main": "bin/plugin.js",
@@ -11,7 +11,10 @@
   "scripts": {
     "clean": "rm -rf bin",
     "grunt": "grunt",
-    "build": "npm run clean && npm run grunt",
+    "build": "npm run clean && npm run grunt && npm run copyfiles",
+    "copyfiles": "npm run copycss && npm run copyjs",
+    "copycss": "cp src/default/assets/css/uirouter.css bin/default/assets/css",
+    "copyjs": "cp src/default/assets/js/reset.js  bin/default/assets/js",
     "prepublish": "npm run build"
   },
   "author": {
@@ -20,10 +23,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sebastian-lenz/typedoc-default-themes.git"
+    "url": "git://github.com/ui-router/typedoc-themes.git"
   },
   "bugs": {
-    "url": "https://github.com/sebastian-lenz/TypeDoc/issues"
+    "url": "https://github.com/ui-router/typedoc-themes/issues"
   },
   "licenses": [
     {

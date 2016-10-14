@@ -8,3 +8,7 @@ node_modules
 npm-debug.log
 etc
 bin
+
+*.iml
+*.ipr
+*.iws

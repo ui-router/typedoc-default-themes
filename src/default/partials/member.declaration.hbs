@@ -6,11 +6,21 @@
         {{defaultValue}}
         </span>
     {{/if}}
-{{/compact}}</div>
+{{/compact}}
+{{#if comment.shortText}}
+    <div class="tsd-header">
+        {{#markdown}} {{{comment.shortText}}} {{/markdown}}
+    </div>
+{{/if}}
+</div>
 
 {{> member.sources}}
 
+<div class="tsd-declaration">
 {{> comment}}
+</div>
+
+{{> member.sources}}
 
 {{#if type.declaration}}
     <div class="tsd-type-declaration">
