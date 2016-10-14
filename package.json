@@ -1,8 +1,8 @@
 {
   "name": "ui-router-typedoc-themes",
   "description": "UIRouter customized themes for TypeDoc.",
-  "version": "0.4.0",
-  "homepage": "http://typedoc.io",
+  "version": "1.0.0",
+  "homepage": "http://typedoc.org",
   "main": "bin/plugin.js",
   "files": [
     "bin",
@@ -12,9 +12,10 @@
     "clean": "rm -rf bin",
     "grunt": "grunt",
     "build": "npm run clean && npm run grunt && npm run copyfiles",
-    "copyfiles": "npm run copycss && npm run copyjs",
+    "copyfiles": "npm run copycss && npm run copyreset && npm run copymdrn",
     "copycss": "cp src/default/assets/css/uirouter.css bin/default/assets/css",
-    "copyjs": "cp src/default/assets/js/reset.js  bin/default/assets/js",
+    "copyreset": "cp src/default/assets/js/reset.js  bin/default/assets/js",
+    "copymdrn": "cp src/default/assets/js/modernizr.js  bin/default/assets/js",
     "prepublish": "npm run build"
   },
   "author": {

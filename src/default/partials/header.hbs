@@ -20,6 +20,7 @@
                     <div id="tsd-filter">
                         <a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
                         <div class="tsd-filter-group">
+                            <!--
                             <div class="tsd-select" id="tsd-filter-visibility">
                                 <span class="tsd-select-label">All</span>
                                 <ul class="tsd-select-list">
@@ -31,16 +32,19 @@
 
                             <input type="checkbox" id="tsd-filter-inherited" checked />
                             <label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+                            -->
 
                             {{#unless settings.excludeExternals}}
                                 <input type="checkbox" id="tsd-filter-externals" checked />
-                                <label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+                                <label class="tsd-widget" for="tsd-filter-externals">Internal UI-Router API</label>
                             {{/unless}}
 
+                            <!--
                             {{#unless settings.excludeNotExported}}
                                 <input type="checkbox" id="tsd-filter-only-exported" />
                                 <label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
                             {{/unless}}
+                            -->
                         </div>
                     </div>
 
