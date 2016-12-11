@@ -5,7 +5,9 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var typedoc;
 (function (typedoc) {
-    typedoc.app = new typedoc.Application();
+    setTimeout(function () {
+        var app = new typedoc.Application();
+    });
 })(typedoc || (typedoc = {}));
 var typedoc;
 (function (typedoc) {
